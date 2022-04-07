@@ -1,0 +1,9 @@
+tasks:
+  - init: yarn
+    command: |
+      export HRM_HOST=`gp url 3000`
+      yarn dev
+
+ports:
+  - port: 3000
+    onOpen: open-browser
